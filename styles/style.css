@@ -23,11 +23,13 @@
 }
 
 .project_header {
+	margin-left: 2%;
 	font-size: 30px;
 	color: black;
 }
 
 .project_descrip {
+	margin-left: 10%;
 	font-size: 16px;
 	color: gray;
 }
@@ -35,14 +37,45 @@
 .categories {
 	margin-top: 5%;
 	margin-bottom: 5%;
-	margin-right: 5%;
+	margin-right: 20%;
 	float: right;
-	width: 40%;
+	width: 25%;
 	border: 5px outset black;
+	border-radius: 10px;
 	background-color: lightblue;
+
 }
 
 .category {
+	width: 30%;
+	margin-left: 15%;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	padding-bottom: 30%;
+}
+
+.category_text_border {
+	float: right;
+	width: 30%;
+}
+
+.category_text {
 	font-size: 25px;
 	color: gray;
+	text-align: left;
+	margin-left: 0%;
+}
+
+.category_num_border {
+	border: 1px outset black;
+	border-radius: 10px;
+	background-color: #BADA55;
+	float: left;
+	width: 40%;
+}
+.category_num {
+	font-size: 25px;
+	color: black;
+	margin-top: 0%;
+	margin-bottom: 0%;
 }
