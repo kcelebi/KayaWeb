@@ -1,0 +1,48 @@
+.projects {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 5%;
+	float: left;
+	width: 40%;
+}
+
+.project_border_1st {
+	border: 5px outset blue;
+	background-color: lightblue;
+	text-align: left;
+	width: 100%; /* 100* 40*/
+	margin-bottom: 2.5%;
+}
+.project_border{
+	border: 5px outset blue;
+	background-color: lightblue;
+	text-align: left;
+	width: 100%; /* 100* 40*/
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+}
+
+.project_header {
+	font-size: 30px;
+	color: black;
+}
+
+.project_descrip {
+	font-size: 16px;
+	color: gray;
+}
+
+.categories {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-right: 5%;
+	float: right;
+	width: 40%;
+	border: 5px outset black;
+	background-color: lightblue;
+}
+
+.category {
+	font-size: 25px;
+	color: gray;
+}
