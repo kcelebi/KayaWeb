@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+		<style>
+		html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+		.w3-sidebar {
+		  z-index: 3;
+		  width: 250px;
+		  top: 43px;
+		  bottom: 0;
+		  height: inherit;
+		}
+		</style>
+        <title>Kaya Çelebi: Predicting Dow Jones and VXX</title>
+        <author>Kaya Çelebi</author>
+    </head>
+
+    <body>
+
+    	<!-- NAVBAR -->
+    	<div class="w3-top">
+		  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+		    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+		    <a href="../html/index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+		    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Me</a>
+		    <a href="https://github.com/kcelebi" class="w3-bar-item w3-button w3-hide-small w3-hover-white">GitHub</a>
+		     <a href="../html/projects.html" class="w3-bar-item w3-button w3-theme-l1">Projects</a>
+		    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+		  </div>
+		</div>
+
+		<h1>Predicting the Dow Jones and VXX Index</h1>
+
+		<p>While I was bested in the field of human-interface trading, I knew I had a few tricks up my sleeve. Most traders make their decisions on purchases based on the news. The Wall Street Journal is a popular newspaper for financial news, and I considered the idea of utilizing it to make better trades. Not by reading it myself, though. I ended up creating a model in Python that reads the top headlines in the WSJ from the past 20 years and correlates it with the Dow Jones Industrial Average as well as the Volatility Index. Using  tf-idf scores I was able to quantify the meaning of the headlines and relate them to the stock prices. After creating theses scores, I used a Kernel Ridge model that, when given 5 consecutive days of headlines, it would predict the Dow Jones Industrial Average and Volatility index for the follow day. Below, are example tf-idf scores for a model that considers 3 consecutive days in advance/</p>
+
+		<h2>image here</h2>
+
+		<p>Incredibly enough, the prediction models were decently accurate. The DJI model ended up with a correlation coefficient of 95% and when tested with future data, had an accuracy of 93%. The VXX model ended up with a correlation coefficient of 78% (but with a regression slope of 0.88) and when tested with future data, had an accuracy of 90%. Below are two graphs of the DJI and VXX model predictions along with the corresponding data (the x-axis indicates time of 100 days in order to make the differences/similarities between the predictions and data values visible). </p>
+
+		<h2>image here</h2>
+
+		<h2>image here</h2>
+
+		<p>While these models do make mistakes, on average, they are money-makers. I'm planning on implementing them with an auto-trader soon to test their effectiveness. I'm also planning on including more test data and more features to refine them. Check out my GitHub repo for updates!</p>
+
+
+	</body>
+</html>
