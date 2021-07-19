@@ -40,7 +40,7 @@ body {
 	text-align:center;
 	text-decoration: none;
 	font-size: 23px;
-	padding-top: 8px;
+	padding-top:  3%;
 	padding-bottom: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -64,13 +64,6 @@ body {
 	width: 40%;
 }
 
-.project_border_1st {
-	border: 5px outset blue;
-	background-color: lightblue;
-	text-align: left;
-	width: 100%; /* 100* 40*/
-	margin-bottom: 2.5%;
-}
 .project_border{
 	border: 5px outset blue;
 	background-color: lightblue;
@@ -97,7 +90,7 @@ body {
 	margin-bottom: 5%;
 	margin-right: 20%;
 	float: right;
-	width: 25%;
+	width: 20%;
 	border: 5px outset black;
 	border-radius: 10px;
 	background-color: lightblue;
@@ -105,25 +98,21 @@ body {
 }
 
 .category {
-	width: 30%;
+	width: 100%%;
 	margin-left: 15%;
 	margin-bottom: 5%;
 	margin-top: 5%;
-	padding-bottom: 30%;
-}
-
-.category_text_border {
-	float: right;
-	width: 30%;
-}
-
-.category_text {
 	font-size: 25px;
 	color: gray;
 	text-align: left;
-	margin-left: 0%;
 }
 
+/*.category_text_border {
+	float: right;
+	width: 30%;
+}*/
+
+/*
 .category_num_border {
 	border: 1px outset black;
 	border-radius: 10px;
@@ -136,7 +125,7 @@ body {
 	color: black;
 	margin-top: 0%;
 	margin-bottom: 0%;
-}
+}*/
 
 canvas {
 	width: 100%;
