@@ -59,23 +59,25 @@ body {
 .projects {
 	margin-top: 5%;
 	margin-bottom: 5%;
-	margin-left: 5%;
-	float: left;
-	width: 40%;
+	margin-right: 20%;
+	float: right;
+	width: 45%;
 }
 
-.project_border{
+.project_border {
 	border: 5px outset blue;
 	background-color: lightblue;
-	text-align: left;
 	width: 100%; /* 100* 40*/
 	margin-top: 2.5%;
+	text-align: left;
 	margin-bottom: 2.5%;
 }
 
-.project_header {
-	margin-left: 2%;
-	font-size: 30px;
+.project_header a{
+	width:  100%;
+	margin-left:  2%;
+	text-align: left;
+	font-size: 27px;
 	color: black;
 }
 
@@ -86,22 +88,22 @@ body {
 }
 
 .categories {
-	margin-top: 5%;
+	margin-top: 6%;
 	margin-bottom: 5%;
-	margin-right: 20%;
-	float: right;
-	width: 20%;
+	margin-left: 5%;
+	float: left;
+	width: 25%;
 	border: 5px outset black;
 	border-radius: 10px;
 	background-color: lightblue;
 
 }
 
-.category {
-	width: 100%%;
-	margin-left: 15%;
-	margin-bottom: 5%;
-	margin-top: 5%;
+.category a{
+	width: 100%;
+	margin-left: 5%;
+	margin-bottom: 0%;
+	margin-top: 0%;
 	font-size: 25px;
 	color: gray;
 	text-align: left;
