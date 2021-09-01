@@ -81,9 +81,14 @@ body {
 	color: black;
 }
 
+.project_header a:hover {
+	color:  gray;
+}
+
 .project_descrip {
 	margin-left: 10%;
 	font-size: 16px;
+	margin-bottom:  2%;
 	color: gray;
 }
 
@@ -107,6 +112,10 @@ body {
 	font-size: 25px;
 	color: gray;
 	text-align: left;
+}
+
+.category a:hover {
+	color:  blue;
 }
 
 /*.category_text_border {
@@ -142,6 +151,29 @@ canvas {
 	margin-left: 20%;
 	font-size: 20px;
 	color: black;
-	margin-top: 45%;
+	margin-top: 10%;
 
+}
+.works {
+	width:  60%;
+	margin-top: 10%;
+	margin-left: 20%;
+	border:  5px outset black;
+	background-color: lightblue;
+}
+.work_item {
+	width:  80%;
+	margin-left: 10%;
+	margin-top: 5%;
+	margin-bottom:  5%;
+}
+
+.work_head {
+	font-size: 32px;
+	text-align: center;
+}
+
+.work_sub a{
+	padding-top: 5%;
+	font-size: 14px;
 }
