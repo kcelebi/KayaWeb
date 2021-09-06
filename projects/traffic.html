@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../styles/index.css">
+        <title>Kaya Çelebi: Projects</title>
+    </head>
+
+    <style>
+    	
+    	img {
+    		float: center;
+    		width:  50%;
+    		margin-left:  25%;
+    	}
+
+    	body {
+    		background: #9B70CB;
+    	}
+
+    	.img2 {
+    		width:  20%;
+    		margin-left:  40%;
+    	}
+
+    	.traffic_header {
+    		font-size: 60px;
+    		width:  80%;
+    		margin-left:  10%;
+    	}
+
+    	.writing_section {
+    		background:  #FFFF;
+    		width:  80%;
+    		margin-left: 10%;
+    		
+    	}
+
+    	.writing_section p {
+    		width:  80%;
+    		margin-left:  10%;
+    		font-size: 18px;
+
+    	}
+
+    	p {
+    		padding-top:  5%;
+    		padding-bottom:  5%;
+    	}
+    </style>
+
+    <body>
+		<!-- The overlay -->
+		<div id="myNav" class="overlay">
+
+		  <!-- Button to close the overlay navigation -->
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		  <!-- Overlay content -->
+		  <div class="overlay-content">
+		    <a href="../html/index.html">About</a>
+		    <a href="../html/projects.html">Projects</a>
+		    <a href="../html/work.html">Work</a>
+		    <a href="www.github.com/kcelebi">GitHub</a>
+		    <a href="../html/resume.html">CV</a>
+		  </div>
+
+		</div>
+		<span style="font-size:40px;cursor:pointer;font-family:Monterrat" onclick="openNav()">&#9776;</span>
+
+		<div class = 'traffic_header'>Traffic V1</div>
+
+		<div class = 'writing_section'>
+
+		<p>Here's a little project from the old days. The first part of this problem is a simulation I created when I was in the 10th grade to observe traffic. The second part of this project is an algorithm that finds the ideal spot to place a new road with the goal of alleviating traffic.</p>
+
+		<p>I wrote a program that simulated the movement of cars through 6 grids of two-way city roads. Cars would follow random paths that were consistent with lawful driving. This included waiting at stoplights for other cars with right-of-way and turning only onto certain roads. Seen in the image below, I implemented a graphic of the map to visualize the traffic. The color of the roads indicate the density, with red meaning heavy traffic and green meaning light to no traffic. On the right side of the image is a terminal window with arrays representing the locations of cars in their respective roads (mostly for debugging, but also quite informative). </p>
+
+		<img src='../data/menu_images/traffic3.png'>
+
+		<p>The labels of the arrays (RA, LE, etc.) refer to the label of the road, and which side. RA refers to road A on the right side, LJ refers to road J on the left side. Below, is an ASCII representation of the map these cars drive on:</p>
+
+		<img class = 'img2' src='../data/menu_images/traffic4.png'>
+
+		<p>This simulation has been quite useful for me in terms of understanding traffic flow and how to solve this issue with the tools used for max-flow problems. A good amount of work I've done in the past few years has related to networks and graphs, and this problem falls right into it. For the second part of this project, I created an algorithm that uses linear programming to alleviate the traffic by adding n  news roads. This project can be found on my GitHub.</p>
+
+		</div>
+
+		<script>
+			/* Open when someone clicks on the span element */
+			function openNav() {
+			  document.getElementById("myNav").style.width = "100%";
+			}
+
+			/* Close when someone clicks on the "x" symbol inside the overlay */
+			function closeNav() {
+			  document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
+
+	</body>
+</html>
