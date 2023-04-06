@@ -2,30 +2,102 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-		<script async defer src="https://buttons.github.io/buttons.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
-		<link rel='stylesheet' href='../styles/style.css'>
-        <title>Kaya Çelebi: Predicting Dow Jones and VXX</title>
-        <author>Kaya Çelebi</author>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../styles/projects.css">
+        <title>Kaya Çelebi: Predicting Dow Jones and Volatility Index</title>
     </head>
 
+    <style>
+    	
+    	img {
+    		float: center;
+    		width:  50%;
+    		margin-left:  25%;
+    	}
+
+    	body {
+    		background: #9B70CB;
+    	}
+
+    	.img2 {
+    		width:  20%;
+    		margin-left:  40%;
+    	}
+
+    	.traffic_header {
+    		font-size: 60px;
+    		width:  80%;
+    		margin-left:  10%;
+    	}
+
+    	.writing_section {
+    		background:  #FFFF;
+    		width:  80%;
+    		margin-left: 10%;
+    		
+    	}
+
+    	.writing_section p {
+    		width:  80%;
+    		margin-left:  10%;
+    		font-size: 18px;
+
+    	}
+
+    	p {
+    		padding-top:  5%;
+    		padding-bottom:  5%;
+    	}
+    </style>
+
     <body>
+		<!-- The overlay -->
+		<div id="myNav" class="overlay">
 
-		<h1>Predicting the Dow Jones and VXX Index</h1>
+		  <!-- Button to close the overlay navigation -->
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-		<p>While I was bested in the field of human-interface trading, I knew I had a few tricks up my sleeve. Most traders make their decisions on purchases based on the news. The Wall Street Journal is a popular newspaper for financial news, and I considered the idea of utilizing it to make better trades. Not by reading it myself, though. I ended up creating a model in Python that reads the top headlines in the WSJ from the past 20 years and correlates it with the Dow Jones Industrial Average as well as the Volatility Index. Using  tf-idf scores I was able to quantify the meaning of the headlines and relate them to the stock prices. After creating theses scores, I used a Kernel Ridge model that, when given 5 consecutive days of headlines, it would predict the Dow Jones Industrial Average and Volatility index for the follow day. Below, are example tf-idf scores for a model that considers 3 consecutive days in advance/</p>
+		  <!-- Overlay content -->
+		  <div class="overlay-content">
+		    <a href="../index.html">About</a>
+		    <a href="../projects.html">Projects</a>
+		    <a href="../work.html">Work</a>
+		    <a href="https://www.github.com/kcelebi">GitHub</a>
+		    <a href="../resume.html">CV</a>
+		  </div>
 
-		<h2>image here</h2>
+		</div>
+		<span style="font-size:40px;cursor:pointer;font-family:Monterrat" onclick="openNav()">&#9776;</span>
 
-		<p>Incredibly enough, the prediction models were decently accurate. The DJI model ended up with a correlation coefficient of 95% and when tested with future data, had an accuracy of 93%. The VXX model ended up with a correlation coefficient of 78% (but with a regression slope of 0.88) and when tested with future data, had an accuracy of 90%. Below are two graphs of the DJI and VXX model predictions along with the corresponding data (the x-axis indicates time of 100 days in order to make the differences/similarities between the predictions and data values visible). </p>
+		<div class = 'traffic_header'>Predicting the Dow Jones and VXX Index</div>
 
-		<h2>image here</h2>
+		<div class = 'writing_section'>
 
-		<h2>image here</h2>
+			<p>While I was bested in the field of human-interface trading, I knew I had a few tricks up my sleeve. Most traders make their decisions on purchases based on the news. The Wall Street Journal is a popular newspaper for financial news, and I considered the idea of utilizing it to make better trades. Not by reading it myself, though. I ended up creating a model in Python that reads the top headlines in the WSJ from the past 20 years and correlates it with the Dow Jones Industrial Average as well as the Volatility Index. Using  tf-idf scores I was able to quantify the meaning of the headlines and relate them to the stock prices. After creating theses scores, I used a Kernel Ridge model that, when given 5 consecutive days of headlines, it would predict the Dow Jones Industrial Average and Volatility index for the follow day. Below, are example tf-idf scores for a model that considers 3 consecutive days in advance/</p>
 
-		<p>While these models do make mistakes, on average, they are money-makers. I'm planning on implementing them with an auto-trader soon to test their effectiveness. I'm also planning on including more test data and more features to refine them. Check out my GitHub repo for updates!x`</p>
+			<h2>image here</h2>
 
+			<p>Incredibly enough, the prediction models were decently accurate. The DJI model ended up with a correlation coefficient of 95% and when tested with future data, had an accuracy of 93%. The VXX model ended up with a correlation coefficient of 78% (but with a regression slope of 0.88) and when tested with future data, had an accuracy of 90%. Below are two graphs of the DJI and VXX model predictions along with the corresponding data (the x-axis indicates time of 100 days in order to make the differences/similarities between the predictions and data values visible). </p>
+
+			<h2>image here</h2>
+
+			<h2>image here</h2>
+
+			<p>While these models do make mistakes, on average, they are money-makers. I'm planning on implementing them with an auto-trader soon to test their effectiveness. I'm also planning on including more test data and more features to refine them. Check out my GitHub repo for updates!x`</p>
+
+	    </div>
+
+	    <script>
+			/* Open when someone clicks on the span element */
+			function openNav() {
+			  document.getElementById("myNav").style.width = "100%";
+			}
+
+			/* Close when someone clicks on the "x" symbol inside the overlay */
+			function closeNav() {
+			  document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
 
 	</body>
 </html>
