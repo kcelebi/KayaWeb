@@ -38,6 +38,7 @@ body {
   float:  right;
   margin-right:  5%;
 
+
 }
 
 .code {
@@ -45,6 +46,8 @@ body {
   width:  50%;
   color:  whitesmoke;
   margin-left:  25%;
+  position: fixed;
+  bottom: 0;
 }
 
 /* The Overlay (background) */
